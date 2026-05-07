@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Scooter Campus</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar" aria-label="Main navigation">
+        <a class="logo" href="#home">🛴 Smart Scooter Campus</a>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#register">Register</a></li>
+          <li><a href="#scooters">Scooters</a></li>
+          <li><a href="#ride">Ride</a></li>
+          <li><a href="#eco">Eco Bonuses</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero section-card">
+        <div>
+          <p class="eyebrow">IT Project Management MVP</p>
+          <h1>Campus e-scooter rental for verified students</h1>
+          <p>
+            Smart Scooter Campus is a simple educational web service that shows
+            how students can register, find an available scooter, start a ride
+            with a simulated QR scan, and earn eco bonuses after finishing a trip.
+          </p>
+          <a class="primary-link" href="#register">Start the MVP flow</a>
+        </div>
+        <div class="hero-card" aria-label="Project highlights">
+          <span>Student verified</span>
+          <strong>Mock data only</strong>
+          <small>No backend • No APIs • No real QR scanner</small>
+        </div>
+      </section>
+
+      <section class="section-card">
+        <h2>Sprint 1 MVP Features</h2>
+        <div class="feature-grid">
+          <article>
+            <strong>SCRUM-10</strong>
+            <p>Student email registration — 5 SP</p>
+          </article>
+          <article>
+            <strong>SCRUM-15</strong>
+            <p>View available scooters on the map — 8 SP</p>
+          </article>
+          <article>
+            <strong>SCRUM-16</strong>
+            <p>Display scooter battery level — 3 SP</p>
+          </article>
+          <article>
+            <strong>SCRUM-20</strong>
+            <p>QR-code scanning simulation to start rental — 8 SP</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="register" class="section-card two-column">
+        <div>
+          <p class="eyebrow">Epic 1: Smart Student Profile</p>
+          <h2>Register as a student</h2>
+          <p>Use a student email domain such as <code>@student.edu</code> or <code>@kpnu.edu.ua</code>.</p>
+          <form id="registrationForm" class="form-panel">
+            <label for="studentName">Name</label>
+            <input id="studentName" type="text" placeholder="Enter your name" required />
+
+            <label for="studentEmail">Student email</label>
+            <input id="studentEmail" type="email" placeholder="name@student.edu" required />
+
+            <button type="submit">Create student profile</button>
+            <p id="registrationMessage" class="message" role="status"></p>
+          </form>
+        </div>
+        <aside id="profileCard" class="profile-card empty">
+          <h3>Student Profile</h3>
+          <p>No verified student profile yet.</p>
+        </aside>
+      </section>
+
+      <section id="scooters" class="section-card">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Epic 2: Interactive Campus Map</p>
+            <h2>Campus scooter map</h2>
+          </div>
+          <button id="availableFilterButton" type="button">Show available scooters</button>
+        </div>
+        <div class="campus-map" aria-label="Simple visual campus map">
+          <span>Library</span>
+          <span>Main Building</span>
+          <span>Dormitory</span>
+          <span>Cafeteria</span>
+        </div>
+        <div id="scooterList" class="scooter-list"></div>
+      </section>
+
+      <section id="ride" class="section-card two-column">
+        <div>
+          <p class="eyebrow">Epic 3: Safe Ride and Rental Control</p>
+          <h2>Scan QR / Start rent</h2>
+          <p>
+            A real QR scanner is not used. Choose a mock scooter and click the
+            simulation button to start a rental.
+          </p>
+          <label for="scooterSelect">Choose scooter</label>
+          <select id="scooterSelect"></select>
+          <button id="startRideButton" type="button">Scan QR / Start rent</button>
+          <button id="finishRideButton" type="button">Finish ride</button>
+        </div>
+        <aside id="ridePanel" class="ride-panel">
+          <h3>Ride Status</h3>
+          <p>No active ride.</p>
+        </aside>
+      </section>
+
+      <section id="eco" class="section-card">
+        <p class="eyebrow">Epic 4: Eco Bonuses and User Rating</p>
+        <h2>Eco Bonuses</h2>
+        <div id="ecoStats" class="stats-grid"></div>
+      </section>
+
+      <section id="about" class="section-card">
+        <h2>Project Info</h2>
+        <div class="tag-row">
+          <span>Scrum</span>
+          <span>Jira</span>
+          <span>Confluence</span>
+          <span>MVP</span>
+          <span>Student project</span>
+        </div>
+        <p>
+          This educational prototype helps students connect project management
+          concepts with a simple working web interface. It intentionally avoids
+          complex backend services and uses mock data with localStorage.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Smart Scooter Campus • Educational IT Project Management MVP</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
