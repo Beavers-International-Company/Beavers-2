@@ -56,4 +56,4 @@ MIT License
 
 ## Legal Note
 
-This project is licensed under the MIT License because it is an educational open-source project.
+This project is licensed under the MIT License because it is an educational open-source project. 
