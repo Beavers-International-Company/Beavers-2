@@ -41,4 +41,4 @@ Smart Scooter Campus is a simple campus e-scooter rental web service prototype. 
 - No real GPS or Google Maps integration.
 - No real QR scanner.
 - No payment system.
-- All data is mock data or stored in browser localStorage.
+- All data is mock data or stored in browser localStorage. 
