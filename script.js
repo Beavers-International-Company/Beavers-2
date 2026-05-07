@@ -1,6 +1,6 @@
 const validStudentDomains = ['@student.edu', '@kpnu.edu.ua'];
 
-const initialScooters = [
+const initialScooters = [ 
   { id: 'SC-101', name: 'Scooter SC-101', location: 'Library', battery: 86, status: 'Available' },
   { id: 'SC-102', name: 'Scooter SC-102', location: 'Main Building', battery: 64, status: 'Available' },
   { id: 'SC-103', name: 'Scooter SC-103', location: 'Dormitory', battery: 18, status: 'Low battery' },
