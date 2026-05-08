@@ -1,6 +1,5 @@
 const validStudentDomains = ['@student.edu', '@kpnu.edu.ua'];
-// TODO: rename this variable after code review
-const x = "Smart Scooter Campus";
+const projectTitle = "Smart Scooter Campus";
 const initialScooters = [ 
   { id: 'SC-101', name: 'Scooter SC-101', location: 'Library', battery: 86, status: 'Available' },
   { id: 'SC-102', name: 'Scooter SC-102', location: 'Main Building', battery: 64, status: 'Available' },
